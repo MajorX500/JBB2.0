@@ -172,5 +172,14 @@ class Manage(commands.Cog):
         await ctx.message.delete()
         await ctx.send(word)
 
+
+    @commands.command(name='print',
+                      description="bot prints query x times",
+                      brief="bot prints query x times")
+    async def say(self, ctx, *,word,x):
+        for y in range(o, x):
+            await ctx.send(word)
+            y +=1
+            
 def setup(bot):
     bot.add_cog(Manage(bot))
