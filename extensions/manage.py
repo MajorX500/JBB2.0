@@ -177,6 +177,7 @@ class Manage(commands.Cog):
                       description="bot prints query x times",
                       brief="bot prints query x times")
     async def say(self, ctx, x, *,word):
+        int(x)
         for y in range(0, x):
             await ctx.send(word)
             y +=1
