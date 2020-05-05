@@ -12,6 +12,7 @@ class Movies(commands.Cog):
         @commands.command(name='abc',
                 description='watched movie list',
                 brief='Watched list')
+
     async def watched(self, ctx):
         embed = discord.Embed(title = "Movies List",
                 description='Something very random xD',
