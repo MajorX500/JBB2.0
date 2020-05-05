@@ -13,7 +13,7 @@ class Movies(commands.Cog):
                      description='watched movie list',
                      brief='Watched list')
     async def watched(self, ctx):
-        await ctx.send(self.movies.dict['watched'])
+        await ctx.send(self.movies.dict,'watched')
 
 def setup(bot):
     bot.add_cog(Movies(bot))
