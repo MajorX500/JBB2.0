@@ -26,3 +26,7 @@ class Movies(commands.Cog):
                 embed.add_field(name = value, value = "dsa", inline=False);
 
         await ctx.send(embed = embed)
+
+        
+def setup(bot):
+    bot.add_cog(Movies(bot))
