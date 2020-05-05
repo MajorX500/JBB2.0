@@ -32,6 +32,7 @@ def main():
     bot.REPLIES_PATH='./db/replies.json'
     bot.IP_PATH='./ip.txt'
     bot.DOTFILES_PATH='./db/dotfiles.json'
+    bot.MOVIES_PATH='./db/movies.json'
    
     #load media
     bot.imagesMap = {}
