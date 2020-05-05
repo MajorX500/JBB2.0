@@ -9,11 +9,11 @@ class Movies(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
     
-    @commands.command(name='watched',
+    @commands.command(name='abc',
                      description='watched movie list',
                      brief='Watched list')
     async def watched(self, ctx):
-        await ctx.send("djsahdisah")
+        await ctx.send("defghijklmnopqrstuvwxyz")
 
 def setup(bot):
     bot.add_cog(Movies(bot))
