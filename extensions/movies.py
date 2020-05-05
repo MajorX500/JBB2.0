@@ -18,7 +18,7 @@ class Movies(commands.Cog):
                 description='Something very random xD',
                 color=0xEE8700)
 
-        with open(bot.MOVIES_PATH) as f:
+        with open('./db/movies.json') as f:
           data = json.load(f)
 
         for key in data:
