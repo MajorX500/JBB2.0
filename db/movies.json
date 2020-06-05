@@ -1,1 +1,81 @@
-{"next": [{"nome": "The Room", "genero": "Drama", "ano": "2003"}, {"nome": "Howl's Moving Castle", "genero": "Anima\u00e7\u00e3o, Aventura", "ano": "2004"}, {"nome": "WALL-E", "genero": "Anima\u00e7\u00e3o, Aventura", "ano": "2008"}, {"nome": "Moana", "genero": "Anima\u00e7\u00e3o, Aventura, Com\u00e9dia", "ano": "2016"}, {"nome": "Back to the Future", "genero": "Aventura, Com\u00e9dia, Sci-Fi", "ano": "1985"}, {"nome": "1917", "genero": "Drama, Guerra", "ano": "2019"}, {"nome": "Inside Out", "genero": "Anima\u00e7\u00e3o, Aventura, Com\u00e9dia", "ano": "2015"}, {"nome": "Sherlock Holmes", "genero": "A\u00e7\u00e3o, Aventura, Crime", "ano": "2009"}, {"nome": "The Avengers", "genero": "A\u00e7\u00e3o, Aventura, Sci-Fi", "ano": "2012"}, {"nome": "Treasure Planet", "genero": "Anima\u00e7\u00e3o, Aventura", "ano": "2002"}, {"nome": "Kimi no Na wa", "genero": "Anima\u00e7\u00e3o, Drama, Fantasia, Romance", "ano": "2016"}], "finished": [{"nome": "Spirited Away", "genero": "Anima\u00e7\u00e3o, Fantasia", "ano": "2001"}, {"nome": "JoJo Rabbit", "genero": "Guerra, Com\u00e9dia", "ano": "2019"}, {"nome": "Parasite", "genero": "Com\u00e9dia, Drama, Thriller", "ano": "2019"}]}
+{
+    "next": [
+        {
+            "nome": "The Room",
+            "genero": "Drama",
+            "ano": "2003"
+        },
+        {
+            "nome": "Howl's Moving Castle",
+            "genero": "Anima\u00e7\u00e3o, Aventura",
+            "ano": "2004"
+        },
+        {
+            "nome": "WALL-E",
+            "genero": "Anima\u00e7\u00e3o, Aventura",
+            "ano": "2008"
+        },
+        {
+            "nome": "Moana",
+            "genero": "Anima\u00e7\u00e3o, Aventura, Com\u00e9dia",
+            "ano": "2016"
+        },
+        {
+            "nome": "Back to the Future",
+            "genero": "Aventura, Com\u00e9dia, Sci-Fi",
+            "ano": "1985"
+        },
+        {
+            "nome": "1917",
+            "genero": "Drama, Guerra",
+            "ano": "2019"
+        },
+        {
+            "nome": "Inside Out",
+            "genero": "Anima\u00e7\u00e3o, Aventura, Com\u00e9dia",
+            "ano": "2015"
+        },
+        {
+            "nome": "Sherlock Holmes",
+            "genero": "A\u00e7\u00e3o, Aventura, Crime",
+            "ano": "2009"
+        },
+        {
+            "nome": "The Avengers",
+            "genero": "A\u00e7\u00e3o, Aventura, Sci-Fi",
+            "ano": "2012"
+        },
+        {
+            "nome": "Treasure Planet",
+            "genero": "Anima\u00e7\u00e3o, Aventura",
+            "ano": "2002"
+        },
+        {
+            "nome": "Kimi no Na wa",
+            "genero": "Anima\u00e7\u00e3o, Drama, Fantasia, Romance",
+            "ano": "2016"
+        },
+        {
+            "nome": "test",
+            "genero": "test",
+            "ano": "test"
+        }
+    ],
+    "finished": [
+        {
+            "nome": "Spirited Away",
+            "genero": "Anima\u00e7\u00e3o, Fantasia",
+            "ano": "2001"
+        },
+        {
+            "nome": "JoJo Rabbit",
+            "genero": "Guerra, Com\u00e9dia",
+            "ano": "2019"
+        },
+        {
+            "nome": "Parasite",
+            "genero": "Com\u00e9dia, Drama, Thriller",
+            "ano": "2019"
+        }
+    ]
+}
