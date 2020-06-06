@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 import json
-from fuzzywuzzy import fuzz, process
+from rapidfuzz import fuzz, process
 from random import choice, shuffle
 
 class Quotes(commands.Cog):
@@ -167,9 +167,9 @@ class Quotes(commands.Cog):
         candidates = quoteA + quote + fact
         shuffle(candidates)
         
-        result = process.extract(search, candidates, limit=1)
+        result = process.extractOne(search, candidates)
 
-        await ctx.send(result[0][0])
+        await ctx.send(result[0])
 
 def getRLine(quotes_dict, filename):
 #get a random quote
