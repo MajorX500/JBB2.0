@@ -130,7 +130,7 @@ class Manage(commands.Cog):
         text_channel = 0
         voice_channel = 0
         for channel in guild.channels:
-            if channel.type == discord.ChannelType.text:
+            if channel.type == discord.ChannelType.text && channel.overwrites_for(guild.default_role).read_messages == True:
                 text_channel += 1
             elif channel.type == discord.ChannelType.voice:
                 voice_channel += 1
