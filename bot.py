@@ -31,7 +31,6 @@ def main():
     bot.IMPACT_PATH='./db/impact.ttf'
     bot.REPLIES_PATH='./db/replies.json'
     bot.IP_PATH='./ip.txt'
-    bot.DOTFILES_PATH='./db/dotfiles.json'
     bot.MOVIES_PATH='./db/movies.json'
    
     #load media
@@ -102,6 +101,10 @@ async def on_ready():
     appInfo = await bot.application_info()
 
     await appInfo.owner.send(embed=embed)
+    
+    channel = bot.get_channel(723573058794815588)
+
+    await channel.send(embed=embed)
 
     print('Logged in as:')
     print(bot.user.name)

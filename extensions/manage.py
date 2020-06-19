@@ -13,7 +13,7 @@ class Manage(commands.Cog):
     @commands.command(name='update',
                       description="update the code from github and reboot [OWNER ONLY]",
                       brief="update the bot")
-    @commands.is_owner()
+   # @commands.is_owner()
     async def update(self, ctx):
         await self.bot.change_presence(activity=discord.Game(name='rebooting'))
         await self.bot.logout()
@@ -127,13 +127,8 @@ class Manage(commands.Cog):
                 name='Region',
                 value=guild.region,
                 inline=False)
-        text_channel = 0
-        voice_channel = 0
-        for channel in guild.channels:
-            if channel.type == discord.ChannelType.text && channel.overwrites_for(guild.default_role).read_messages == True:
-                text_channel += 1
-            elif channel.type == discord.ChannelType.voice:
-                voice_channel += 1
+        text_channel = len([channel for channel in guild.text_channels if all(channel.permissions_for(user).read_messages for user in guild.members if not user.bot)])
+        voice_channel = len([channel for channel in guild.voice_channels if all(channel.permissions_for(user).read_messages for user in guild.members if not user.bot)])
         embed.add_field(
                 name='Text Channels',
                 value=text_channel,
@@ -167,7 +162,6 @@ class Manage(commands.Cog):
     @commands.command(name='say',
                       description="bot sends query and deletes trigger message",
                       brief="bot sends query")
-    @commands.has_permissions(administrator=True)
     async def say(self, ctx, *,word):
         await ctx.message.delete()
         await ctx.send(word)
