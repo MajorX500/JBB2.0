@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 import json
-from rapidfuzz import fuzz, process
+from fuzzywuzzy import fuzz, process
 from random import choice, shuffle
 
 class Quotes(commands.Cog):
@@ -104,7 +104,7 @@ class Quotes(commands.Cog):
         await ctx.send('Existem '+ str(n) + ' frases')
 
     @commands.command(name='add',
-                      description="add a quote [OWNER ONLY]",
+                     description="add a quote [OWNER ONLY]",
                       brief="add a quote")
     @commands.is_owner()
     async def add(self, ctx, cat,*, msgs):
@@ -166,10 +166,10 @@ class Quotes(commands.Cog):
         fact = self.quotes_dict['fact'] 
         candidates = quoteA + quote + fact
         shuffle(candidates)
-        
-        result = process.extractOne(search, candidates)
 
-        await ctx.send(result[0])
+        result = process.extract(search, candidates, limit=1)
+        
+        await ctx.send(result[0][0])
 
 def getRLine(quotes_dict, filename):
 #get a random quote

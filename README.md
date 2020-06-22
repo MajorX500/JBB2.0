@@ -48,7 +48,7 @@ python bot.py
 ## Built With
 * [discord.py](https://github.com/Rapptz/discord.py) - API for discord
 * [baseconvert](https://github.com/squdle/baseconvert) - Convert numbers
-* [rapidfuzz](https://github.com/maxbachmann/rapidfuzz) - Search quotes
+* [fuzzywuzzy](https://github.com/seatgeek/fuzzywuzzy) - Search quotes
 * [wolframalpha](https://github.com/jaraco/wolframalpha) - Python 3 wrapper for Wolfram|Alpha v2.0 API.
 * [ftfy](https://github.com/LuminosoInsight/python-ftfy) - Fixes glitches in Unicode text.
 * [deckofcards](https://deckofcardsapi.com/)
